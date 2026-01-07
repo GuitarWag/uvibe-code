@@ -61,7 +61,8 @@ echo ""
 
 # First confirmation
 echo -e "${YELLOW}Are you ABSOLUTELY sure? This isn't like 'undo' in VS Code.${NC}"
-read -p "Type 'yes' to continue (or anything else to chicken out): " confirm
+echo -n "Type 'yes' to continue (or anything else to chicken out): "
+read confirm < /dev/tty
 
 if [ "$confirm" != "yes" ]; then
     echo ""
@@ -76,7 +77,8 @@ echo ""
 
 # Second confirmation (because drama)
 echo -e "${YELLOW}Final chance. Type 'NUKE IT' to proceed:${NC}"
-read -p "> " final_confirm
+echo -n "> "
+read final_confirm < /dev/tty
 
 if [ "$final_confirm" != "NUKE IT" ]; then
     echo ""

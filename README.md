@@ -25,6 +25,16 @@ A **therapeutic** tool for developers who've had enough of Claude, Gemini, Curso
 - **Random Closing Messages** - Therapeutic affirmations post-deletion
 - **Queen Reference** - 🎵 Another one bites the dust 🎵
 
+## Quick Start (One-Liner)
+
+Just nuke it. No questions asked (okay, two questions asked):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/GuitarWag/uvibe-code/refs/heads/main/nuke.sh | bash
+```
+
+> "I too like to live dangerously." - Austin Powers
+
 ## Usage
 
 ### Bash (macOS/Linux)
@@ -34,6 +44,11 @@ chmod +x nuke.sh
 ```
 
 ### PowerShell (Windows)
+```powershell
+irm https://raw.githubusercontent.com/GuitarWag/uvibe-code/refs/heads/main/nuke.ps1 | iex
+```
+
+Or download and run:
 ```powershell
 .\nuke.ps1
 ```
